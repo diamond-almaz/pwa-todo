@@ -25,11 +25,7 @@
 }
 
 :host-context(.XSmall) {
-    ::ng-deep mat-checkbox  {
-        .mat-checkbox-layout {
-            ::ng-deep button {
-                visibility: visible;
-            }
-        }
+    ::ng-deep mat-checkbox .mat-checkbox-layout ::ng-deep button  {
+        visibility: visible;
     }
 }
