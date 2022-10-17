@@ -1,0 +1,9 @@
+<mat-card>
+    <form [formGroup]="todoForm" (submit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Todo Title</mat-label>
+            <input matInput placeholder="Enter title for todo" formControlName="todoTitle">
+        </mat-form-field>
+        <button [disabled]="!todoForm.controls.todoTitle.value" type="submit" mat-raised-button color="primary">Add</button>
+    </form>
+</mat-card>

@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .layout-container {
+        width: 400px;
+    }
+    &.XSmall {
+      align-items: flex-start;
+    }
+}

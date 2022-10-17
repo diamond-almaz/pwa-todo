@@ -1,0 +1,6 @@
+.todos-container {
+    > app-todo {
+        display: block;
+        margin-top: 10px;
+    }
+}

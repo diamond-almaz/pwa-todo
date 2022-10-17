@@ -1,0 +1,9 @@
+<mat-card>
+    <mat-checkbox color="primary" class="checkbox" [checked]="isChecked" (change)="this.onChangeCheked.emit()">
+    <div class="title" [ngStyle]="getTitleStyle()">
+        {{ todo.title }}
+    </div>
+    <app-button (onClick)="onDelete.emit()">
+    </app-button>
+    </mat-checkbox>
+</mat-card>

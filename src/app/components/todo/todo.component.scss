@@ -1,0 +1,35 @@
+:host {
+        ::ng-deep mat-checkbox {
+            width: 100%;
+            .mat-checkbox-layout {
+                width: 100%;
+                .mat-checkbox-label {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    div.title {
+                        width: calc(100% - 35px);
+                    }
+                    ::ng-deep button {
+                        visibility: hidden;
+                    }
+            
+                    &:hover {
+                        ::ng-deep button {
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+:host-context(.XSmall) {
+    ::ng-deep mat-checkbox  {
+        .mat-checkbox-layout {
+            ::ng-deep button {
+                visibility: visible;
+            }
+        }
+    }
+}
